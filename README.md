@@ -1,44 +1,36 @@
-# EV Charging Station Dashboard
+## EV Charging Network Analysis
 
-This repository contains a Power BI dashboard that analyzes the Electric Vehicle (EV) Charging Station Infrastructure across North America. The dashboard provides insights into the growth of charging stations, station usage, geographic distribution, and proximity to highways, helping users understand key patterns and trends in EV charging infrastructure.
+## Project Executive Summary
+As the adoption of electric vehicles (EVs) accelerates, the limiting factor remains the availability and reliability of charging infrastructure. This project performs a comprehensive analysis of the EV charging network across the United States and Canada. By analyzing geographic density, operational status, and proximity to major transit corridors, this study identifies critical gaps in the current network and proposes a strategic roadmap for future station development to support long-distance travel and urban accessibility.
 
-## Overview
+## Technical Workflow & Architecture
 
-Electric vehicles are becoming more popular, increasing the demand for reliable charging stations. This project visualizes various metrics related to EV charging stations, such as:
+### 1. Data Acquisition & Structural Integrity
+* **Multi-National Dataset**: Leveraged a large-scale public dataset from Kaggle containing detailed attributes for thousands of charging stations across North America.
+* **Feature Set**: Processed 17+ attributes, including high-granularity location data (Latitude/Longitude), connector types (Level 1, Level 2, DC Fast Charging), and ownership status (Public vs. Private).
+* **Data Cleansing**: Performed normalization on state and city identifiers to ensure accurate cross-border geospatial mapping between the US and Canada.
 
-- Number of charging stations over time
-- Distribution of public vs. private charging stations
-- Charging station usage based on distance to highways
-- Geographic distribution of stations across North America
+### 2. Geospatial & Quantitative Analysis
+* **Density Mapping**: Developed an interactive map visualization to identify high-concentration hubs (Midwest, East Coast, and Western Canada) and under-served "charging deserts".
+* **Urban-Rural Comparative Study**: Segmented the data to analyze the disparity in infrastructure, revealing a significant concentration in metropolitan areas and a strategic need for more rural Level 3 (DC Fast) stations to enable interstate travel.
+* **Operational Analytics**: Evaluated annual usage rates and operational status to determine which station types and locations yield the highest efficiency.
 
-The dashboard can be used by stakeholders, urban planners, and policymakers to make data-driven decisions on expanding and improving EV charging infrastructure.
+### 3. Business Intelligence Dashboard
+I designed an executive-level Power BI dashboard featuring a three-tier information architecture:
+* **Level 1: Key Metrics (KPIs)**: High-level summaries of total stations, growth rates, and station-to-state ratios.
+* **Level 2: Geographic Interface**: A middle-tier interactive map allowing users to filter by city, state, or fuel type.
+* **Level 3: Strategic Insights**: Bottom-tier bar and trend charts visualizing capacity trends and regional comparisons.
 
-## Dashboard Features
+## Key Technologies
+* **Analysis Tool**: Microsoft Power BI
+* **Data Manipulation**: Power Query (ETL)
+* **Visualization Techniques**: Geospatial Mapping, Heatmaps, and Time-Series Trend Analysis
+* **Domain Focus**: Infrastructure Planning, Sustainability, and Operational Strategy
 
-The **Power BI Dashboard** provides the following visualizations:
+## Recommendations
+* **Infrastructure Optimization**: Identified that stations near highways see the highest usage, suggesting that future private and public investment should prioritize high-traffic corridors.
+* **Market Expansion**: Provides a data-driven blueprint for energy companies to target "rural deserts," essential for reducing range anxiety and supporting long-distance EV adoption.
+* **Policy Support**: Offers local governments a clear view of their regional standing, assisting in the allocation of subsidies for Level 2 and DC Fast Charging development.
 
-1. **Total Charging Stations and Average Annual Usage by Year**:
-   - Shows the growth trend of the number of charging stations and their average usage over time.
-   
-2. **Count of StationID by StationType**:
-   - A pie chart depicting the breakdown of public vs. private stations.
-
-3. **Count of Stations by City**:
-   - A bar chart showing the number of charging stations in key cities across North America.
-
-4. **Sum of Annual Usage (kWh) by Distance to Highway (miles)**:
-   - A line graph that shows how annual station usage varies depending on proximity to highways.
-
-5. **Geographical Map of Charging Stations**:
-   - An interactive map highlighting charging station locations by state/province and station I
-
-## Key Insights
-
-- **Steady Growth**: The number of charging stations has consistently increased over time, aligning with the growing adoption of electric vehicles.
-- **Public Dominance**: Most charging stations are publicly accessible, making EV infrastructure more widely available.
-- **Highway Proximity**: Stations located closer to highways tend to have higher usage, suggesting the importance of location for station efficiency.
-- **Geographic Distribution**: Cities like Toronto, Vancouver, and Calgary have the most stations, while some rural areas may require further development.
-
-## LinkedIn
-
-https://www.linkedin.com/in/jahnavi-sh/
+---
+**Prepared by:** [Jahnavi Sharma](https://www.linkedin.com/in/jahnavi-sh/)
